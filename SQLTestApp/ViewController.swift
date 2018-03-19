@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SQLClientDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var client = SQLClient.sharedInstance()!
         // Do any additional setup after loading the view, typically from a nib.
     }
 
